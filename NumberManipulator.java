@@ -20,16 +20,17 @@ public class NumberManipulator {
         // Print the largest integer less than or equal to the number
         System.out.println("largest integer less than or equal to the number "+ user_input + " is " + (int)Math.floor(user_input)); // Used math.floor to get the bottom integer.
         // Print the integer that is closest to the number (ties go to even)
-        System.out.println("The integer that is closest to the number (ties go to even) " + user_input + " is "+ (int)Math.rint(user_input));
+        System.out.println("The integer that is closest to the number (ties go to even) " + user_input + " is "+ (int)Math.rint(user_input)); // Used Rint because it satasfies the required logic
         // Print the integer closest to the number (standard rounding)
-        System.out.println("The integer closest to the number "+ user_input + " is "+ (int)Math.round(user_input));
+        System.out.println("The integer closest to the number "+ user_input + " is "+ (int)Math.round(user_input)); // Used round because it provides basic rounding
         // BONUS:
         // Cast the number to an int and print the character it represents
-        System.out.println("Character: "+ (int)user_input + " is "+ (char)(int)user_input);
+        System.out.println("Character: "+ (int)user_input + " is "+ (char)(int)user_input); // Casting the user input int to Char
         // Add 1 to that number and print the next character'
-        int next = (int)(user_input + 1);
-        System.out.println("Character (+ 1): " + next + " is " + (char)(int)next);
+        int next_character = (int)(user_input + 1); // The proceeding ASCII character from the one the user inputted
+        System.out.println("Character (+ 1): " + next_character + " is " + (char)(int)next_character);
 
         // Format a summary table using formatted output
+        //
     }
 }
